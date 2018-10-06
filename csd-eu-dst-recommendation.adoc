@@ -1,0 +1,30 @@
+= CalConnect Directive: Patent policy
+:title: CalConnect Directive: Patent policy
+:docnumber: CC/DIR 10003
+:copyright-year: 2018
+:language: en
+:doctype: standard
+:edition: 1
+:status: draft
+:revdate: 2018-09-03T00:00:00Z
+:language: en
+:technical-committee: PUBLISH
+:toc:
+:stem:
+
+:sectnums!:
+
+include::sections/00-foreword.adoc[]
+include::sections/00-intro.adoc[]
+
+:sectnums:
+
+include::sections/01-scope.adoc[]
+include::sections/02-normrefs.adoc[]
+include::sections/03-terms.adoc[]
+include::sections/04-policy.adoc[]
+include::sections/05-licensing.adoc[]
+include::sections/06-declaration.adoc[]
+
+include::sections/99-bibliography.adoc[]
+
