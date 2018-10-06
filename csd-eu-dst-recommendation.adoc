@@ -1,6 +1,6 @@
 = CalConnect Directive: Patent policy
 :title: CalConnect Directive: Patent policy
-:docnumber: CC/DIR 10003
+:docnumber: CC/R 7008
 :copyright-year: 2018
 :language: en
 :doctype: standard
@@ -8,7 +8,7 @@
 :status: draft
 :revdate: 2018-09-03T00:00:00Z
 :language: en
-:technical-committee: PUBLISH
+:technical-committee: Ad Hoc EU Time
 :toc:
 :stem:
 
@@ -22,9 +22,7 @@ include::sections/00-intro.adoc[]
 include::sections/01-scope.adoc[]
 include::sections/02-normrefs.adoc[]
 include::sections/03-terms.adoc[]
-include::sections/04-policy.adoc[]
-include::sections/05-licensing.adoc[]
-include::sections/06-declaration.adoc[]
+include::sections/04-general.adoc[]
+include::sections/05-conclusion.adoc[]
 
 include::sections/99-bibliography.adoc[]
-
