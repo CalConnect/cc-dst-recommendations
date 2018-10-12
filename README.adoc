@@ -15,7 +15,7 @@ or any client of your choice e.g. Sourcetree from Atlassian (https://www.sourcet
 
 change the files locally
 
-Note: There is no need to install the environment for building the artifacts
+NOTE: There is no need to install the environment for building the artifacts
 locally
 
 == create new version of documents
