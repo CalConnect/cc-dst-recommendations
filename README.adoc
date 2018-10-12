@@ -1,43 +1,33 @@
-= CalConnect Conference 41 Report
+= CalConnect EU DST recommendation
 
 == Fetching the document
 
-[source,sh]
-----
-git clone https://github.com/riboseinc/csd-public-documents
-----
-
-== Install Build Tools
+Use either a terminal
 
 [source,sh]
 ----
-brew install ruby
-gem install bundler
+git clone https://gitlab.com/calconnect/adhoc-eutime/csd-eu-dst-recommendation.git
 ----
 
-== Install CSD dependencies
+or any client of your choice e.g. Sourcetree from Atlassian (https://www.sourcetreeapp.com/)
 
-[source,sh]
-----
-pushd common
-bundle install
-popd
-----
+== make changes
 
-== Enter This Directory And Build!
+change the files locally
 
-[source,sh]
-----
-pushd conference41rpt
-make clean all
-----
+Note: There is no need to install the environment for building the artifacts
+locally
 
-== Open the generated HTML file
+== create new version of documents
 
-[source,sh]
-----
-make open
-# or
-open *.html
-----
+commit the changes to the repository
 
+Go to Gitlab and download the automatically build artefacts from
+
+https://gitlab.com/calconnect/adhoc-eutime/csd-eu-dst-recommendation/-/jobs
+
+To manually navigate there go to 
+https://gitlab.com/calconnect/adhoc-eutime/csd-eu-dst-recommendation/ 
+-> CI / CD -> Jobs
+
+and download the latest build version.
