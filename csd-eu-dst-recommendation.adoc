@@ -1,28 +1,33 @@
-= CalConnect Directive: EU DST Recommendation
-:title: CalConnect Directive: EU DST Recommendation
-:docnumber: CC/R 7008
+= CalConnect calls on EU to reconsider timeline for proposed seasonal time changes: Workshop and mailing list announced for discussion of technical impact
+:title: CalConnect calls on EU to reconsider timeline for proposed seasonal time changes: Workshop and mailing list announced to discuss technical impact of planned changes
+:docnumber: 18018
 :copyright-year: 2018
 :language: en
-:doctype: standard
+:doctype: advisory
 :edition: 1
-:status: draft
-:revdate: 2018-10-12T00:00:00Z
+:status: final-draft
+:revdate: 2018-10-26T00:00:00Z
 :language: en
-:technical-committee: Ad Hoc EU Time
+:technical-committee: AdHoc EU Time
 :toc:
 :stem:
 
+////
 :sectnums!:
 
 include::sections/00-foreword.adoc[]
 include::sections/00-intro.adoc[]
 
 :sectnums:
+////
 
-include::sections/01-scope.adoc[]
-include::sections/02-normrefs.adoc[]
-include::sections/03-terms.adoc[]
-include::sections/04-general.adoc[]
-include::sections/05-conclusion.adoc[]
+include::sections/01-summary.adoc[]
+include::sections/02-eu-proposal.adoc[]
+include::sections/03-going-to-do.adoc[]
+include::sections/04-contact.adoc[]
+include::sections/05-about.adoc[]
 
-include::sections/99-bibliography.adoc[]
+//include::sections/99-bibliography.adoc[]
+
+
+

@@ -1,11 +1,11 @@
 = CalConnect EDST (Extended Daylight Savings Time) Reflections and Recommendations
 :title: CalConnect EDST (Extended Daylight Savings Time) Reflections and Recommendations
-:docnumber: CC/R 0707
+:docnumber: 0707
 :copyright-year: 2007
 :language: en
-:doctype: standard
+:doctype: advisory
 :edition: 1
-:status: draft
+:status: published
 :revdate: 2007-10-04T00:00:00Z
 :language: en
 :technical-committee: DST Ad Hoc
@@ -55,6 +55,12 @@ _{technical-committee}_.
 This document reviews the impact of implementation of Extended Daylight Savings Time, which moved the beginning of DST forward to March 11 in 2007, on the information technology industry and in particular calendaring and scheduling systems, and recommendations for what the industry should do about timezones going forward.
 
 This document is a follow-on to the advisories and compendium of fixes which CalConnect collected and published prior to March 11, 2007.
+
+
+The editors of the document are:
+
+* Mike Mize, California State University Fresno
+* Gary Schwartz, Rensselaer Polytechnic Institute
 
 
 == Introduction
