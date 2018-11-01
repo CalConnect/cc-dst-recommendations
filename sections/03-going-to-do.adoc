@@ -1,29 +1,31 @@
 
 == What CalConnect is doing to help the transition
 
-CalConnect is pursuing a number of initiatives in order to assist policy makers and IT specialists in implementing the proposed timezone changes.
+CalConnect is pursuing a number of initiatives in order to assist policy makers and IT specialists in implementing the proposed time zone changes.
 
 === Public workshop
 
-CalConnect is organizing a public workshop dedicated to the EU proposal for abolishment of seasonal time changes at our next conference in Zurich (Feb 4-8, 2019).
+CalConnect is organizing a public workshop dedicated to the EU proposal for abolishment of seasonal time change at our next conference in Zurich (Feb 4-8, 2019).
 
-We call on all stakeholders (e.g., vendors, consumers, policymakers) interested in, or affected by this Directive to http://www.calconnect.org/events/calconnect-xliv-february-4-8-2019[register] and participate in the workshop.
+We call on all stakeholders (e.g., vendors, consumers, policymakers) interested in, or affected by this Directive, to
+link:​http://www.calconnect.org/events/calconnect-xliv-february-4-8-2019[register]
+and participate in the workshop.
 
 
 === Timezone distribution standard
 
 Our members have created the standard for https://tools.ietf.org/html/rfc7808[Time Zone Data Distribution Services (IETF RFC 7808)]. Today, most services and devices still rely on patching and manually updating time zone information instead of automated or dynamic updates.
 
-We recommend the European Commission to strongly support, collaborate on and call for adoption of such open standards.
+We recommend the European Commission to strongly a support, collaborate on and call for adoption of of such open standards.
 
 
 === Coordinated global effort with ISO/TC 154
 
-We are working closely with other standards-setting organisations (including ISO/TC 154 and UNECE) to harmonize timezone information and distribution internationally.
+We are working closely with other standards-setting organisations (including https://www.iso.org/committee/53186.html[ISO/TC 154] and https://www.unece.org[UNECE]) to harmonize timezone information and distribution internationally.
 
 We recommend regional standardization bodies in the European Union, such as https://www.cen.eu[CEN] and https://www.cenelec.eu[CENELECT], as well as standardization bodies in its member countries, to participate in this global partnership.
 
 
 === Public timezone change mailing list
 
-We have set up a public mailing list to discuss the challenges and best practices relating to timezone and DST changes worldwide at http://www.calconnect.org/resources/discussion-lists/time-zone-discussion.
+We have set up a public mailing list to discuss the challenges and best practices relating to timezone and DST changes worldwide at: http://www.calconnect.org/resources/discussion-lists/time-zone-discussion.

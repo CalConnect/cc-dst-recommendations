@@ -1,0 +1,27 @@
+
+== References
+
+Articles relating to this proposal
+
+* _Abschaffung der Zeitumstellung braucht mehr Zeit_,  https://www.stuttgarter-nachrichten.de/inhalt.eu-abschaffung-der-zeitumstellung-braucht-mehr-zeit.7a2c1f71-0dc7-4a3f-a2be-e7653f36948c.html
+
+* _EU members complain about a lack of detail and a tight timeline_, https://www.politico.eu/article/countries-resist-jean-claude-juncker-daylight-saving-clock-change-plan/
+
+* _IANA statement_,
+link:https://mm.icann.org/pipermail/tz/2018-July/026705.html[​https://mm.icann.org/pipermail/tz/2018-July/026705.html]
+
+* _Mit dem Ende der Zeitumstellung droht ein neues Jahr-2000-Problem_,
+https://newsroom.gmx.net/2018/10/26/ende-der-zeitumstellung-moegliche-folgen-es-droht-ein-neues-jahr-2000-problem/
+
+Articles relating to past time changes and their challenges
+
+* _What is the daylight saving time (DST) problem?_,
+https://www.itprotoday.com/management-mobility/what-daylight-saving-time-dst-problem
+
+* _Daylight Saving Time – The Year 2007 Problem_,
+http://www.edgeblog.net/2007/daylight-saving-time-the-year-2007-problem/
+
+CalConnect Timezone and DST knowledge base
+
+* https://www.calconnect.org/resources/daylight-saving-time
+

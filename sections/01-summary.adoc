@@ -5,4 +5,4 @@ The European Commission has proposed, after public consultation, its member stat
 
 https://calconnect.org[The Calendaring and Scheduling Consortium], a global non-profit organization widely known as https://calconnect.org[CalConnect], shares these concerns and recommends the European Commission to extend the timelines stated in the proposal.
 
-Specifically, we recommend providing a transition period of at least one year (12 months) after the final decision of the change has been set. CalConnect will be hosting a public workshop at its next conference, and has just launched a public mailing list for the discussion of best practices for planning new timezone changes.
+Specifically, we recommend providing a transition period of at least one year (12 months) after the final decision of the change has been set. CalConnect will host a public workshop at its next conference, and has just launched a public mailing list for the discussion of best practices for planning new time zone changes.

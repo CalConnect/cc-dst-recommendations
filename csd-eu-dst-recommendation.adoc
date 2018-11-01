@@ -5,12 +5,13 @@
 :language: en
 :doctype: advisory
 :edition: 1
-:status: final-draft
-:revdate: 2018-10-26T00:00:00Z
+:status: published
+:revdate: 2018-10-30T00:00:00Z
 :language: en
 :technical-committee: AdHoc EU Time
+:local-cache-only:
+:data-uri-image:
 :toc:
-:stem:
 
 ////
 :sectnums!:
@@ -26,6 +27,7 @@ include::sections/02-eu-proposal.adoc[]
 include::sections/03-going-to-do.adoc[]
 include::sections/04-contact.adoc[]
 include::sections/05-about.adoc[]
+include::sections/06-references.adoc[]
 
 //include::sections/99-bibliography.adoc[]
 
