@@ -8,7 +8,10 @@
 :status: published
 :revdate: 2007-10-04T00:00:00Z
 :language: en
-:technical-committee: DST Ad Hoc
+:technical-committee: Ad Hoc DST
+:published-date: 2007-10-04
+:local-cache-only:
+:data-uri-image:
 :toc:
 :stem:
 
