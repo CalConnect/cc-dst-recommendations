@@ -10,10 +10,15 @@
 :language: en
 :technical-committee: Ad Hoc DST
 :published-date: 2007-10-04
-:local-cache-only:
-:data-uri-image:
 :toc:
 :stem:
+:xrefstyle: short
+:imagesdir: images
+:docfile: cc-0707.adoc
+:mn-document-class: csd
+:mn-output-extensions: xml,html,pdf
+:local-cache-only:
+:data-uri-image:
 
 ////
 Editors

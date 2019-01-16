@@ -10,9 +10,16 @@
 :language: en
 :technical-committee: Ad Hoc EU Time
 :published-date: 2018-10-30
+:toc:
+:stem:
+:xrefstyle: short
+:imagesdir: images
+:docfile: cc-18018.adoc
+:mn-document-class: csd
+:mn-output-extensions: xml,html,pdf
 :local-cache-only:
 :data-uri-image:
-:toc:
+
 
 ////
 :sectnums!:
