@@ -6,7 +6,7 @@
 :doctype: advisory
 :edition: 1
 :status: published
-:revdate: 2018-10-30T00:00:00Z
+:revdate: 2018-10-30
 :language: en
 :technical-committee: Ad Hoc EU Time
 :published-date: 2018-10-30
