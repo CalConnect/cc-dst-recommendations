@@ -34,7 +34,7 @@ GEM
       iso-bib-item (~> 0.4.2)
     ietfbib (0.4.5)
       iso-bib-item (~> 0.4.2)
-    iev (0.2.0)
+    iev (0.2.1)
       nokogiri
     image_size (2.0.0)
     iso-639 (0.2.8)
