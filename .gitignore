@@ -1,7 +1,4 @@
 .DS_Store
-csd-*.xml
-csd-*.pdf
-csd-*.doc
-csd-*.html
+.swp
 .tmp.xml
 

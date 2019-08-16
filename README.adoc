@@ -1,33 +1,62 @@
-= CalConnect EU DST recommendation
+= CalConnect DST recommendations
+
+This work item belongs to TC DATETIME.
+
+image:https://travis-ci.com/CalConnect/csd-eu-dst-recommendation.svg?branch=master["Build Status", link="https://travis-ci.com/calconnect/csd-eu-dst-recommendation"]
+
+This document is available in its rendered forms here:
+
+* https://calconnect.github.io/csd-eu-dst-recommendation/[CC: CalConnect DST recommendations (HTML)]
 
 == Fetching the document
 
-Use either a terminal
+[source,sh]
+----
+git clone https://github.com/CalConnect/csd-eu-dst-recommendation/
+----
+
+== Installing Build Tools
+
+See https://www.metanorma.com/author/topics/install/
+
+
+== Running via Docker or locally
+
+If you have installed the build tools locally, and wish to run the
+locally-installed compilation tools, there is nothing further to set.
+
+If you don't want to deal with local dependencies, use the docker
+version by:
 
 [source,sh]
 ----
-git clone https://gitlab.com/calconnect/adhoc-eutime/csd-eu-dst-recommendation.git
+export METANORMA_DOCKER=1
 ----
 
-or any client of your choice e.g. Sourcetree from Atlassian (https://www.sourcetreeapp.com/)
+The `Makefile` will automatically choose the proper command to
+execute.
 
-== make changes
 
-change the files locally
+== Building The Document
 
-NOTE: There is no need to install the environment for building the artifacts
-locally
+[source,sh]
+----
+make clean all
+----
 
-== create new version of documents
+The following outputs will be built:
 
-commit the changes to the repository
+* CSD XML (https://github.com/calconnect/metanorma-model-csd) (`[filename].xml`)
+* HTML (`[filename].html`)
+* PDF (`[filename].pdf`)
+* Word DOC (`[filename].doc`)
 
-Go to Gitlab and download the automatically build artefacts from
 
-https://gitlab.com/calconnect/adhoc-eutime/csd-eu-dst-recommendation/-/jobs
+== Iterating the document
 
-To manually navigate there go to 
-https://gitlab.com/calconnect/adhoc-eutime/csd-eu-dst-recommendation/ 
--> CI / CD -> Jobs
+[source,sh]
+----
+make html
+open cc-*.html
+----
 
-and download the latest build version.
