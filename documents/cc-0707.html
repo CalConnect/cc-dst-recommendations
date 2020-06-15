@@ -1,0 +1,1251 @@
+
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style>
+  <!--
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  vertical-align: baseline; }
+
+html, body, div, span, applet, object, iframe,
+p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, q, s,
+small, strike, strong, sub, sup, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: "Source Sans Pro", sans-serif; }
+
+code, pre, tt, kbd, samp {
+  font-family: "Source Code Pro", monospace;
+  font-variant-ligatures: none; }
+
+code *, pre *, tt *, kbd *, samp * {
+  font-family: "Source Code Pro", monospace !important;
+  font-variant-ligatures: none; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+.h2Annex {
+  font-family: "Source Sans Pro", sans-serif; }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto; }
+  dl dt p, dl dd p {
+    margin-top: 0; }
+  dl dt {
+    grid-column-start: 1; }
+  dl dd {
+    grid-column-start: 2; }
+
+b, strong {
+  font-weight: bold; }
+
+div.document-stage-band, div.document-type-band {
+  background-color: #333333; }
+
+#standard-band {
+  background-color: #0AC442; }
+
+#standard {
+  border-bottom: solid 3px #0AC442; }
+
+#directive-band {
+  background-color: #540D6E; }
+
+#directive {
+  border-bottom: solid 3px #540D6E; }
+
+#guide-band {
+  background-color: #D183C9; }
+
+#guide {
+  border-bottom: solid 3px #D183C9; }
+
+#specification-band {
+  background-color: #65AFFF; }
+
+#specification {
+  border-bottom: solid 3px #65AFFF; }
+
+#report-band {
+  background-color: #3A405A; }
+
+#report {
+  border-bottom: solid 3px #3A405A; }
+
+#amendment-band {
+  background-color: #F26430; }
+
+#amendment {
+  border-bottom: solid 3px #F26430; }
+
+#corrigendum-band {
+  background-color: #C84630; }
+
+#corrigendum {
+  border-bottom: solid 3px #C84630; }
+
+#administrative-band {
+  background-color: #BFAE48; }
+
+#administrative {
+  border-bottom: solid 3px #BFAE48; }
+
+#advisory-band {
+  background-color: #BD9391; }
+
+#advisory {
+  border-bottom: solid 3px #BD9391; }
+
+#proposal-band {
+  background-color: #39A0ED; }
+
+#proposal {
+  border-bottom: solid 3px #39A0ED; }
+
+#working-draft-band {
+  background-color: #2D7393; }
+
+#working-draft {
+  border-bottom: solid 3px #2D7393; }
+
+#committee-draft-band {
+  background-color: #2A6B7C; }
+
+#committee-draft {
+  border-bottom: solid 3px #2A6B7C; }
+
+#draft-standard-band {
+  background-color: #1C7F7A; }
+
+#draft-standard {
+  border-bottom: solid 3px #1C7F7A; }
+
+#final-draft-band {
+  background-color: #53C170; }
+
+#final-draft {
+  border-bottom: solid 3px #53C170; }
+
+#published-band {
+  background-color: #069E2D; }
+
+#published {
+  border-bottom: solid 3px #069E2D; }
+
+#withdrawn-band {
+  background-color: #004E64; }
+
+#withdrawn {
+  border-bottom: solid 3px #004E64; }
+
+#cancelled-band {
+  background-color: #2E382E; }
+
+#cancelled {
+  border-bottom: solid 3px #2E382E; }
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4em;
+  color: #1d1d1d;
+  background-color: #fff; }
+  body main {
+    margin: 0 3em 0 6em; }
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 360px; } }
+
+@media print {
+  .container {
+    padding-left: 0; } }
+
+@media screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 323px;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0 0 0 45px;
+    background-color: #f7f7f7; } }
+
+@media print {
+  nav {
+    position: relative;
+    width: auto;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0;
+    margin-right: 0;
+    background-color: white; } }
+
+nav #toc {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400; }
+  @media screen and (max-width: 768px) {
+    nav #toc {
+      padding: 0 1.5em;
+      overflow: visible; } }
+@media screen and (min-width: 768px) {
+  #toggle {
+    position: fixed;
+    height: 100%;
+    width: 30px;
+    background-color: #1d1d1d;
+    color: white !important;
+    cursor: pointer;
+    z-index: 100; }
+    #toggle span {
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); } }
+
+@media screen and (max-width: 768px) {
+  #toggle {
+    display: none; } }
+
+@media print {
+  #toggle {
+    display: none; } }
+
+#toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  #toc ul li a {
+    padding: 5px 10px; }
+  #toc ul a {
+    color: #485094;
+    text-decoration: none;
+    display: block; }
+    #toc ul a:hover {
+      box-shadow: none;
+      color: white; }
+
+#toc .h2 {
+  padding-left: 30px; }
+
+#toc .h3 {
+  padding-left: 50px; }
+
+#toc .toc-active, #toc li:hover {
+  background: #1d1d1d;
+  box-shadow: inset -5px 0px 10px -5px #1d1d1d !important; }
+  #toc .toc-active a, #toc li:hover a {
+    color: white; }
+
+@media print {
+  #toc .toc-active, #toc li:hover {
+    background: white;
+    box-shadow: none !important; }
+  #toc .toc-active a {
+    color: #485094; }
+  #toc li:hover a {
+    color: black; } }
+
+#toc ul {
+  margin-bottom: 0.25em; }
+
+#toc li {
+  list-style-type: none; }
+  #toc li:before {
+    content: " " !important;
+    display: none; }
+
+.rule {
+  width: 100%;
+  height: 1px;
+  background-color: #0e1a85;
+  margin: 2em 0; }
+  @media screen and (min-width: 768px) {
+    .rule.toc {
+      display: none; } }
+.document-stage-band {
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 101;
+  box-shadow: -5px 0px 10px #1d1d1d; }
+  .document-stage-band > :first-child {
+    position: relative;
+    width: 25px;
+    font-weight: 300;
+    height: 160px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-left: 6px;
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    white-space: nowrap;
+    display: block;
+    bottom: 0; }
+  @media print {
+    .document-stage-band {
+      display: none; } }
+.document-type-band {
+  left: 0;
+  top: 180px;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 102; }
+  .document-type-band > :first-child {
+    position: relative;
+    width: 25px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-left: 6px;
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    white-space: nowrap;
+    display: block;
+    bottom: 0; }
+  @media print {
+    .document-type-band {
+      display: none; } }
+  .document-type-band .document-type {
+    top: 20px; }
+
+/* Typograpy */
+h1, h2, h3, h4, h5, h6 {
+  color: #0e1a85;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.3em; }
+
+h1 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-top: 2em; }
+  h1#content {
+    margin-top: 2em; }
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 400; }
+  h2 p {
+    display: inline; }
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 400; }
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+/* Terms */
+.TermNum, .Terms, .AltTerms {
+  color: #485094;
+  font-weight: 400; }
+
+p.TermNum {
+  font-size: 0.9em;
+  line-height: 1em;
+  margin: 0;
+  margin-top: 2em; }
+
+p.Terms {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin: 0; }
+
+/* Links, selection */
+a, a:visited {
+  text-decoration: none;
+  color: #485094; }
+
+a:hover {
+  color: white;
+  background: #1d1d1d;
+  box-shadow: 3px 0 0 #1d1d1d, -3px 0 0 #1d1d1d; }
+
+::selection,
+::-moz-selection {
+  background: #1d1d1d;
+  color: white; }
+
+/* Lists */
+ol {
+  margin-left: 1.2em; }
+
+ul {
+  position: relative;
+  margin-left: 0;
+  list-style: none;
+  padding-left: 1.2em; }
+
+ul > li:before {
+  content: "\2014";
+  position: absolute;
+  left: 0; }
+
+main li {
+  margin-top: 1em;
+  padding-left: 0.5em; }
+
+/* Bibliograhy */
+p.Biblio, p.NormRef {
+  margin-top: 1em; }
+
+p.Biblio:before, p.NormRef:before {
+  content: "\2014";
+  padding-right: 1em; }
+
+/* Blocks */
+.figure {
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow: auto;
+  font-family: "Source Code Pro", monospace;
+  font-variant-ligatures: none; }
+  .figure .FigureTitle, .figure .figure-title {
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center; }
+  .figure > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+    height: auto; }
+
+.SourceTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+pre {
+  font-family: "Source Code Pro", monospace;
+  font-variant-ligatures: none;
+  background-color: #f7f7f7;
+  font-size: 0.8em;
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow-y: auto;
+  overflow-x: scroll; }
+  .example pre {
+    background: none; }
+
+.pseudocode {
+  background-color: #f7f7f7;
+  font-size: 0.8em;
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow: auto; }
+  .pseudocode .SourceTitle {
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center; }
+  .example .pseudocode {
+    background: none; }
+
+.Admonition .AdmonitionTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.recommend .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.require .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.permission .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.Note, .Admonition {
+  color: #47430c;
+  padding: 0.25em;
+  margin: 0; }
+
+.Note {
+  background-color: #fff495; }
+  .Note p {
+    margin: 1em; }
+
+.blockquote, .Quote {
+  background-color: #f7f7f7;
+  font-style: italic;
+  width: 80%;
+  padding: 1.5em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto; }
+  .blockquote .QuoteAttribution, .Quote .QuoteAttribution {
+    text-align: right; }
+
+.formula, .Formula {
+  background-color: #f7f7f7;
+  padding: 1.5em;
+  margin-top: 2em;
+  text-align: center; }
+
+/* Examples */
+table.example {
+  background-color: #e1eef1; }
+
+td.example {
+  padding: 0 1em 0 1em;
+  margin: 2em 0 1em 0; }
+
+.example {
+  background-color: #e1eef1;
+  padding: 0.5em;
+  margin: 2em 0 1em 0;
+  text-align: left;
+  padding-left: 2em; }
+
+.example p {
+  margin: 0; }
+
+.example .example-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: -1.5em; }
+
+.example pre, .example .pseudocode {
+  background: none; }
+
+/* Tables */
+table {
+  width: 100%;
+  font-weight: 300;
+  margin: 1em 0 2em 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2em; }
+  table, table th, table td {
+    border: 1px solid black;
+    font-size: 0.95em; }
+  table th, table td {
+    padding: 1em; }
+  table td.header {
+    font-weigth: 400; }
+
+p.TableTitle {
+  text-align: center;
+  margin-top: 2.5em;
+  font-weight: 400; }
+
+/* Footnotes */
+a.footnote-number {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.footnote {
+  font-size: 0.9em; }
+
+/* Contact Info */
+.contact-info {
+  background-color: #f7f7f7;
+  padding: 1em;
+  margin-top: 2em;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; }
+  .contact-info p, .contact-info a {
+    font-family: "Source Code Pro", monospace;
+    font-variant-ligatures: none;
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 1em;
+    margin: 0; }
+  .contact-info a:hover {
+    color: #485094;
+    background: none;
+    text-decoration: underline;
+    box-shadow: none; }
+  .contact-info .name {
+    font-weight: 700; }
+
+/* Keywords */
+span.keyword {
+  font-weight: 600; }
+
+/* Admonitions */
+.Admonition, .admonition {
+  background-color: #ffb3b3;
+  padding: 0.5em;
+  margin: 1.5em 0 1.5em 0;
+  text-align: left; }
+  .Admonition p, .admonition p {
+    margin: 0; }
+
+.coverpage {
+  text-align: center;
+  padding-left: 1.5em; }
+
+.wrapper-top {
+  background-color: #0e1a85;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAABYlAAAWJQFJUiTwAAADwUlEQVR4nO3YgQ2AMAwDwcAiWZ1NizrH30lIeIEq9nPOGSDqPgC7+93v/suy3Mmvhx+6VAAIcwFAmc4nyzYAIMgGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAFTNzA9ggAr9aahO8QAAAABJRU5ErkJggg==");
+  color: #ffffff;
+  padding: 2em 0; }
+
+.doc-number {
+  font-size: 0.5em;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.coverpage-maturity {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0 0 2em 0;
+  text-transform: uppercase; }
+
+.coverpage-title {
+  padding-bottom: 0.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 600;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.title-section1 {
+  padding: 0 2em 0 3em; }
+
+.prefatory-section {
+  padding: 0 3em 0 6em; }
+
+.zzSTDTitle1, .MsoCommentText {
+  display: none; }
+
+.coverpage-logo span, .coverpage-tc-name span {
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.coverpage-tc-name {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 0.25em 0; }
+
+.coverpage-contributors {
+  margin-top: 1em;
+  line-height: 1.5em;
+  font-weight: 300; }
+  .coverpage-contributors .role {
+    font-variant-caps: all-small-caps;
+    background: #f7f7f7;
+    border-radius: 5px;
+    padding: 0.1em 0.5em;
+    margin-left: 1em;
+    color: #485094;
+    font-size: 0.9em;
+    font-weight: 900; }
+  .coverpage-contributors .person {
+    display: block;
+    font-weight: 300; }
+
+.coverpage-doc-identity {
+  font-size: 2em;
+  line-height: 2em; }
+
+.coverpage-title .title-second {
+  display: none; }
+
+.coverpage-stage-block {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  margin: 2em 0em 2em 0em;
+  text-transform: uppercase; }
+
+.coverpage-warning {
+  border-top: solid 1px #f36f36;
+  border-bottom: solid 1px #f36f36;
+  margin: 1em 2em;
+  color: #485094;
+  padding: 1em; }
+  .coverpage-warning .title {
+    color: #f36f36;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2em; }
+
+.copyright {
+  padding: 1em;
+  font-size: 0.9em;
+  text-align: left; }
+  .copyright .name, .copyright .address {
+    color: #485094; }
+
+#myBtn {
+  font-family: "Source Code Pro", monospace;
+  font-variant-ligatures: none;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #1d1d1d;
+  opacity: 0.15;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  border-radius: 4px; }
+  #myBtn:hover {
+    opacity: 1; }
+  @media print {
+    #myBtn {
+      display: none; } }
+a.anchorjs-link:hover {
+  background: none;
+  color: #485094;
+  box-shadow: none; }
+
+@page {
+  margin: 2cm 1cm 2cm 1cm; }
+
+@media print {
+  h1, .title-section1 {
+    page-break-before: always; }
+  h1.toc-contents {
+    margin-top: 2em; } }
+
+-->
+</style><title>CalConnect EDST (Extended Daylight Savings Time) Reflections and Recommendations</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--TOC script import-->
+<script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<script type="text/javascript">function toclevel() { return "h1:not(:empty):not(.TermNum):not(.noTOC),h2:not(:empty):not(.TermNum):not(.noTOC)";}
+</script>
+
+<!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+
+<!--Font awesome import for the link icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
+<style class="anchorjs"></style>
+</head>
+  <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
+    <div class="title-section"><div class="document-stage-band" id="published-band">
+  <p class="document-stage">Published</p>
+</div>
+
+<div class="document-type-band" id="advisory-band">
+  <p class="document-type">CalConnect Advisory</p>
+</div>
+
+<div id="toggle"> <span>&#x2022;</span> </div>
+
+<header>
+
+  <!--<div class="WordSection1">-->
+  <div class="coverpage">
+    <div class="wrapper-top">
+
+      <div class="coverpage-doc-identity">
+        <div class="doc-number">
+          <span class="docnumber">CC/Adv 0707:2007</span>
+          <!-- <span class="docnumber-separator">:</span>
+            <span class="docyear">2007</span> -->
+        </div>
+
+        <div class="coverpage-title">
+          <span class="title-first">CalConnect EDST (Extended Daylight Savings Time) Reflections and Recommendations</span>
+          <!--<span class="title-second"></span>-->
+        </div>
+      </div>
+
+      <div class="coverpage-logo">
+        <span>The Calendaring and Scheduling Consortium</span>
+      </div>
+
+      <div class="coverpage-tc-name">
+        <span>TC Ad Hoc DST</span>
+      </div>
+
+      
+
+      
+
+      <div class="coverpage-contributors">
+        
+
+      </div>
+    </div>
+
+    <div class="title-section1">
+      <div class="coverpage-stage-block">
+        <span class="coverpage-stage" id="advisory">CalConnect Advisory</span>
+      </div>
+
+      <div class="coverpage-stage-block">
+        <span class="coverpage-maturity" id="published"></span>
+      </div>
+
+      
+
+      <div class="copyright">
+        <div class="year">
+          <div class="boilerplate-copyright">
+    <div>
+      <p id="_a61e2ca7-fb78-40e9-a325-97c837f97641">&#xA9; 2007 The Calendaring and Scheduling Consortium, Inc. </p>
+    </div>
+  </div>
+        </div>
+
+        <div class="message">
+          <div class="boilerplate-legal">
+    <div>
+      <p id="_59d5a9c5-ec06-4c0d-a6be-0eabc698d1c8">All rights reserved. Unless otherwise specified, no part of this
+        publication may be reproduced or utilized otherwise in any form or by any
+        means, electronic or mechanical, including photocopying, or posting on the
+        internet or an intranet, without prior written permission. Permission can
+        be requested from the address below.  </p>
+    </div>
+  </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="boilerplate-feedback">
+    <div>
+      <p id="boilerplate-name">The Calendaring and Scheduling Consortium, Inc.</p>
+      <p id="boilerplate-address">4390 Chaffin Lane<br />
+        McKinleyville<br />
+        California 95519<br />
+        United States of America<br />
+        <br />
+        <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
+        <a href="www.calconnect.org">www.calconnect.org</a>
+      </p>
+    </div>
+  </div>
+        </div>
+      </div>
+
+      <div class="rule"></div>
+    </div>
+  </div>
+</header>
+
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <div class="prefatory-section"><nav>
+  <h1 id="content">Contents</h1>
+  <div id="toc"><ul><li class="h1"><a href="#toc0">      Foreword</a></li><li class="h1"><a href="#toc1">      Introduction</a></li><li class="h1"><a href="#toc2">      1.&#xA0; Background</a></li><li class="h1"><a href="#toc3">      2.&#xA0; Real&#x2010;world experiences</a></li><li class="h1"><a href="#toc4">      3.&#xA0; Lessons Learned</a></li><li class="h1"><a href="#toc5">      4.&#xA0; Recommendations for the Future</a></li><li class="h1"><a href="#toc6">      5.&#xA0; Conclusions</a></li></ul></div>
+
+</nav>
+
+
+<div class="rule toc"></div>
+
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <main class="main-section"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <div class="authority">
+  
+
+
+
+  
+
+  
+</div>
+      <br />
+      <div id="_cf3c96a2-0d74-460f-8873-c13da8be6dd9">
+        <h1 class="ForewordTitle" id="toc0">Foreword</h1>
+        <p id="_f64859f6-ad7b-4cae-b3a8-8442d156b0c0">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is a global
+non-profit organization with the aim to facilitate interoperability of
+collaborative technologies and tools through open standards.</p>
+        <p id="_9c4a4ea7-89ff-4af3-a237-ea7b49e17367">CalConnect works closely with international and regional partners,
+of which the full list is available on our website
+(<a href="https://www.calconnect.org/about/liaisons-and-relationships">https://www.calconnect.org/about/liaisons-and-relationships</a>).</p>
+        <p id="_329e0e10-3751-4ff6-9d87-971f86577818">The procedures used to develop this document and those intended for its
+further maintenance are described in the CalConnect Directives.</p>
+        <p id="_2bbbac2d-f687-4151-873f-1e840075c54d">In particular the different approval criteria needed for the different
+types of CalConnect documents should be noted. This document was drafted in
+accordance with the editorial rules of the CalConnect Directives.</p>
+        <p id="_7487ff29-0d8d-4eb7-857b-76311df36d35">Attention is drawn to the possibility that some of the elements of this
+document may be the subject of patent rights. CalConnect shall not be
+held responsible for identifying any or all such patent rights. Details
+of any patent rights identified during the development of the document
+will be provided in the Introduction.</p>
+        <p id="_2057e6ec-e2ba-424d-961a-c656b064b121">Any trade name used in this document is information given for the
+convenience of users and does not constitute an endorsement.</p>
+        <p id="_100c42d5-797e-4f4a-9d13-c6d1ecf8c30b">This document was prepared by Technical Committee
+<i>Ad Hoc DST</i>.</p>
+        <p id="_5e197273-52ac-475c-befb-4a0329e0334b">This document reviews the impact of implementation of Extended Daylight Savings Time, which moved the beginning of DST forward to March 11 in 2007, on the information technology industry and in particular calendaring and scheduling systems, and recommendations for what the industry should do about timezones going forward.</p>
+        <p id="_c79b3394-52e7-4faf-846b-48ef4cfaaa1a">This document is a follow-on to the advisories and compendium of fixes which CalConnect collected and published prior to March 11, 2007.</p>
+        <p id="_1a8b6c07-7764-4ca5-93fe-6852806d0a2b">The editors of the document are:</p>
+        <ul id="_af2cb804-4c68-4ddd-8b18-09993b09a03a">
+<li>
+<p id="_3ce80b25-0e0a-4522-9148-01abcaad8d41">Mike Mize, California State University Fresno</p>
+</li>
+<li>
+<p id="_ab291b9c-c808-41e2-91a0-c54b1ac7e083">Gary Schwartz, Rensselaer Polytechnic Institute</p>
+</li>
+</ul>
+      </div>
+      <br />
+      <div class="Section3" id="_introduction">
+        <h1 class="IntroTitle" id="toc1">Introduction</h1>
+        <p id="_90d18557-74c5-4e81-966b-b9a83a3ee6f0">The U.S. Energy Policy Act of 2005 (EPACT 2005), signed by President Bush on August 8, 2005, among its many, many provisions, amends the Uniform Time Act of 1966 by changing the start and end dates of daylight saving time (DST) in the US. DST begins three weeks earlier and ends one week later, effective in 2007. DST now begins the second week of March and ends the first week in November (March 11 and November 4 in 2007). Other areas, including Canada and Bermuda, also choose to follow the new rules.</p>
+        <p id="_ed65f17d-fc39-424e-a5bb-79488d09399c">CalConnect, the Calendaring and Scheduling Consortium, has been interested and active in timezone and DST issues almost since its inception in December 2004.</p>
+        <p id="_48e594c4-0df9-4ca5-8721-48c7b8623092">In June 2005, CalConnect issued a press release, &#x201C;EDST Change Untimely&#x201D; and a &#x201C;DST Advisory Notice&#x201D;, both of which &#x201C;&#x2026;&#x200B;suggested a simple delay of the effective date (at that point set to March 2006) of the pending legislation to insure that calendar and scheduling vendors and consumers have ample time to prepare for any changes.&#x201D;</p>
+        <p id="_86b76af9-f74d-414c-8416-0d901ed756a2">In October 2005, CalConnect conducted a timezone survey and issued the &#x201C;Report on TIMEZONE Questionnaire Results&#x201D;.</p>
+        <p id="_6aa2d24a-34ca-4cf6-8917-83df5044754e">In May 2006, representatives of CalConnect met with consultants for the Japanese government which was studying a return to DST. DST has not been observed in Japan since 1952.</p>
+        <p id="_7e5bba4a-6b34-4594-8974-e81b1369ac57">In February 2007, CalConnect issued the press release, &#x201C;CalConnect Gives Guidance to IT Staff on Impact of DST Change&#x201D;, published &#x201C;Extended Daylight Saving Time&#x2009;&#x2014;&#x2009;Review and Considerations&#x201D;, and created the &#x201C;Extended Daylight Saving Time Links, Advisories and Changes&#x201D; web page to assist system administrators in tracking vendor updates and DST-related news and information.</p>
+        <p id="_ae46b806-ed86-4a3f-a741-eb5031b5ae41">In August 2007, CalConnect reactivated its TIMZONE Technical Committee, which was originally convened in June 2005.</p>
+        <p id="_2e491b86-fe8d-4dc0-8334-10672435c11b">CalConnect&#x2019;s &#x201C;Extended Daylight Saving Time Review and Considerations&#x201D; promised a future &#x201C;Lessons Learned and Recommendations for the Future&#x201D; document based on real-world experiences over the transition time in March to the new DST rules&#x201D;. This document fulfills that promise.</p>
+      </div>
+      <p class="zzSTDTitle1">CalConnect EDST (Extended Daylight Savings Time) Reflections and Recommendations</p>
+      <div id="_background">
+        <h1 id="toc2">1.&#xA0; Background</h1>
+        <p id="_4602f3b3-f3c5-4832-b502-fe29e3eb3680">The U.S. Energy Policy Act of 2005 amends the Uniform Time Act of 1966 by changing the start and end dates of daylight saving time starting in 2007 as noted previously.</p>
+        <p id="_b9913f9b-6ad8-4cba-9e17-203e7b19bb31">The Uniform Time Act codified daylight saving time (DST) observance within the U.S. Prior to the act, each state set its own policy for DST observance, and in some cases, which parts of the state would be affected. The Act originally set the start of DST to be the last Sunday in April, and was amended in 1986 (effective in 1987) to be the first Sunday in April.</p>
+        <p id="_52eeb938-4b26-40a9-acd6-22acccbecb6c">Whereas this is the first modification to the DST rules in the United States in 20 years, this is not the only recent change to DST around the globe. Western Australia, Brazil, and the state of Indiana, among others, also made their own adjustments to DST start and/or end dates within the last year or so. The things that distinguish the EPACT 2005 changes from the other changes are:</p>
+        <ol type="a" id="_f8035e9f-1732-47bd-96ad-1bbe34b0eb4c">
+<li>
+<p id="_462576fa-3a70-4e9c-be20-0ef500a9d211">The aforementioned more regional DST changes were problematic and difficult in a number of ways, but the impact of these difficulties was relatively small globally.</p>
+</li>
+<li>
+<p id="_b8067e73-820e-41f7-8acb-46cce0b69492">The scope of the EPACT 2005 change is substantially larger, affecting virtually the entire United States, the third most populous nation in the world, as well Canada and Bermuda.</p>
+</li>
+<li>
+<p id="_40af8c18-17a0-4fb5-8ee3-eb706f378ca2">The role that the United States plays in international commerce and IT development makes this change very significant across the globe.</p>
+</li>
+<li>
+<p id="_907b1b81-a8ce-4071-8f85-e45d739368b0">In the words of Thomas Friedman, &#x201C;the world is flat&#x201D;, with geo-political borders becoming less relevant with respect to trade and commerce. Virtually, everyone is doing business with everyone else. Agreeing globally on dates and times is now essential.</p>
+</li>
+<li>
+<p id="_8356f9ac-a6ca-481d-8708-996aa506ec97">Mobile devices are pervasive and indispensable today, as are enterprise and web-based calendaring systems connecting people across time zones, and organizational and political boundaries Twenty years ago, when the Uniform Time Act was amended in 1986, these things didn&#x2019;t exist or they were an inconsequential novelty. Clearly that is not the case today.</p>
+</li>
+<li>
+<p id="_bdd2dbe3-9698-49fd-be7d-1d252098ce43">Computer systems, networks, applications and other electronic devices used by banks, the government and industry are dependent on correct date and time information and are far more widely used than they were when the last change was made in 1986.</p>
+</li>
+<li>
+<p id="_9e0e2106-ba1d-4c04-8a01-362645741825">EPACT 2005 requires the Department of Energy to report to the US Congress on the impact of the DST change on energy usage and/or conservation by the end of 2007. Congress may revert back to the 1986 DST dates if they choose. There is conflicting research as to whether daylight saving results in a net energy saving.</p>
+</li>
+</ol>
+        <p id="_77c00825-033f-42f6-8a28-693bf42749af">CalConnect&#x2019;s October 2005 &#x201C;Report on TIMEZONE Questionnaire Results, observed &#x201C;`&#x2026;&#x200B; a number of products convert local time information with a supplied timezone into UTC (the &#x2018;standard&#x2019; time reference) as a simplification. As a result of this, timezone information is effectively lost. Such products will need to determine how to do any adjustment of the UTC times based on the proposed DST changes.&#x201D;</p>
+        <p id="_4543f285-41a9-46ed-a3de-d51126541d89">CalConnect&#x2019;s February 2007 publication, &#x201C;Extended Daylight Saving Time&#x2009;&#x2014;&#x2009;Review and Considerations&#x201D; predicted &#x201C;The impact of the DST changes should be significantly smaller than Year 2000 (Y2K) but is still a concern for those involved in preparing for the change. Many systems will be corrected simply by applying automatic updates from the system vendor in advance of the March 11th deadline. The result of having out of date rules is also smaller, with systems being off by an hour instead of a hundred years (or failing completely). On the other hand, there may be significant impact on computer support organizations, especially in cases where meetings in a calendar system need to be corrected manually.&#x201D;</p>
+      </div>
+      <div id="_realworld_experiences">
+        <h1 id="toc3">2.&#xA0; Real&#x2010;world experiences</h1>
+        <p id="_4b9f7878-b1f5-4e24-9419-311d04029249">The impact of the earlier DST start date was noticeable but the magnitude of the impact was generally felt more by larger enterprises than small businesses or home computer users. Problems were experienced in a number of areas:</p>
+        <ol type="a" id="_f04741e7-5f1b-4d5d-8bea-962a4717d041">
+<li>
+<p id="_f88eb807-aff7-4371-8994-1f28d89c8e2d">Small devices or systems did not correctly ascertain and/or display their local time correctly, usually, but not always, being off by an hour.</p>
+</li>
+<li>
+<p id="_a93ff802-412b-413c-aca9-1e54f621e973">Some already entered/stored dates/times, such as those in a calendaring system, were no longer correct, again, in most cases being off by an hour.</p>
+</li>
+<li>
+<p id="_5ccbc4d1-be85-44f8-a6c0-c981755b21bb">Some already entered/stored all day events, were no longer correct, now spanning more than a single day.</p>
+</li>
+<li>
+<p id="_5a1196e2-75a9-42b2-9d64-335fc2725812">Synchronization between devices/systems, such as a smart phone and a calendaring system, resulted in previously correctly stored events now having incorrect times and/or dates.</p>
+</li>
+<li>
+<p id="_7e7797db-5403-409c-9d6f-4a008c2e4ee4">Some users &#x201C;manually&#x201D; corrected already entered/stored events which later became incorrect after software updates were applied which automatically &#x201C;re-corrected&#x201D; these same events.</p>
+</li>
+<li>
+<p id="_aa1f5678-24f2-440d-8e15-541a2a3c3da1">A major utility in one of the Western US states, which could not update all of its electrical meters in time and accepted that there would be some minor accounting discrepancies for the extended DST period.</p>
+</li>
+<li>
+<p id="_72c46529-36a8-4d3c-9587-8e85d57e6db3">Some enterprise systems could not be automatically remediated with software patches, requiring end users to &#x201C;manually&#x201D; adjust dates/times which were now incorrect.</p>
+</li>
+<li>
+<p id="_e1d2a0ba-04b6-4ae8-94cf-2d90f9a70a2f">In some cases, when reviewing remediated systems for correct results, users mistook correct time/dates for incorrect values and changed them yet again.</p>
+</li>
+</ol>
+        <p id="_006ea339-dd4b-4e33-8474-f9c21f1b94db">While most vendors recognized the seriousness of the problem and responded responsibly by producing patches, conversion tools and workarounds, some problems persisted, and others actually resulted from these remediation efforts:</p>
+        <ol type="a" id="_f678b05f-839e-4fab-a2b6-3823a40fd595">
+<li>
+<p id="_4f854008-100d-402e-9331-cd19773d6532">Some fixes were not available in time for IT staffs to deploy enterprise-wide before the DST period began.</p>
+</li>
+<li>
+<p id="_4b6ebc32-b85f-438d-bfbf-8b7492fd908a">Some initial patches were faulty, requiring later &#x201C;fixes&#x201D; to the initial fix.</p>
+</li>
+<li>
+<p id="_7076ec58-f0e8-4c5e-b009-48e2b2045528">The sequencing of patches, both chronologically as well as with respect to the application of other patches, was not well understood or communicated in some cases.</p>
+</li>
+<li>
+<p id="_f1da5c3d-6b63-46ca-a32c-ad97c7d9363a">Some vendors did a better job than others communicating with their customers about which systems required remediation and how to affect that remediation.</p>
+</li>
+</ol>
+        <p id="_6d94cbc1-fb5c-4afd-b3d3-72dae1559cec">IT staffs also encountered difficulties, including:</p>
+        <ol type="a" id="_95ccdd48-bbc3-4454-8b30-69a7f9ab4da6">
+<li>
+<p id="_9cb1a9d4-c391-4a0d-afb5-3ce960aee231">Help desks being flooded with end user questions and problem reports.</p>
+</li>
+<li>
+<p id="_f6767f87-0d61-404b-aa26-a2c2f7261658">Being able to locate and obtain information and updates for all their products and devices.</p>
+</li>
+<li>
+<p id="_43fa1041-e702-4bcd-9143-48195c3f7371">Providing information and instructions to their user communities.</p>
+</li>
+<li>
+<p id="_4a8ef164-2f83-4266-9185-0d8813fc8f93">Finding adequate resources to do all the required remediation.</p>
+</li>
+<li>
+<p id="_07f978af-197d-46d3-bb44-e810350081e5">Identifying all the devices and systems requiring remediation.</p>
+</li>
+<li>
+<p id="_401570a0-e895-4229-86bd-bba919a29b9f">Remediating systems in the proper sequences and at the correct times.</p>
+</li>
+<li>
+<p id="_f416009e-5369-4cb6-9598-bb96b2fbf0e6">Remediating locally developed applications and/or systems.</p>
+</li>
+<li>
+<p id="_4278fda0-803a-44ad-b890-ddbdf5266171">Deciding what to do about end-of-life or otherwise no longer supported systems for which no remediation was available.</p>
+</li>
+<li><p id="_3173f26e-a7f7-4fde-89db-be2417364366">Inadequate coordination and cooperation between units in larger organizations.</p><div id="_51e5e810-efbf-4bcd-b4b8-0116292891ed" class="figure">
+<pre id="_2cdc9204-3472-4e85-a5cd-adfd06c34ab5">Generally speaking, the media treated the issue without much hype or hysteria, underplaying the significance if anything, unlike the confusion generated with the Y2K preparations. There were few "`news of the weird`" stories generated by the earlier DST start.</pre>
+<p class="FigureTitle" style="text-align:center;">Figure 1</p></div>
+<div id="_83c7c6be-2468-4d3f-ad60-9f41fab1102a" class="figure">
+<pre id="_eae59cb6-805b-4bef-b3b3-4acc064ee466">In most cases, remediation of systems as well as any "`manual`" corrections required, were accomplished shortly after March 11, 2007. There were virtually no reports of additional problems on April 1, 2007 the date which DST would have begun under the 1986 rules.</pre>
+<p class="FigureTitle" style="text-align:center;">Figure 2</p></div></li>
+</ol>
+        <p id="_ef384292-06d9-42be-8537-9301b6879431">Many IT staff and end users resorted to Google searches for vendor and more general information on the DST changes. Although CalConnect did provide a web page, &#x201C;Extended Daylight Saving Time Links, Advisories and Changes&#x201D;, there were very few web sites which served as authoritative clearinghouses of DST information.</p>
+        <p id="_2c6df8c2-c691-47f8-8e26-3143333901d7">DST-related issues seemed to gain the most traction and awareness within user groups and professional organizations very close the March 11th date, leaving insufficient time in many cases for the necessary tasks.</p>
+      </div>
+      <div id="_lessons_learned">
+        <h1 id="toc4">3.&#xA0; Lessons Learned</h1>
+        <p id="_5472f91e-d7ef-499d-b334-b3563a8f10df">The actions required to mitigate problems resulting from EPACT 2005 pointed out a number of areas where changes needed to be made both in application development and administrative practice:</p>
+        <ul id="_a127e2c8-7c9f-4139-9ca1-0106f476875d">
+<li>
+<p id="_9ecdd5c2-c3e9-4381-9388-451661d21455">Date and time information needs to be stored as completely as possible with as few assumptions about the context as possible. In some cases, incomplete date and time representation made reliable data conversion impossible.</p>
+</li>
+<li>
+<p id="_42248c8b-1acc-4621-b7ed-8caa50b32e68">Systems and devices need to accommodate timezone and DST changes more easily, automatically, and correctly.</p>
+</li>
+<li>
+<p id="_d79595fe-9fe0-4483-9bf2-33184d98cb15">Conversion tools, patches and documentation need to be easily accessible.</p>
+</li>
+<li>
+<p id="_bbb3c3cc-2a22-4f5b-9919-91a2385702bb">Conversion tools, patches and documentation need to be available in a timely manner so</p>
+</li>
+</ul>
+        <p id="_335df905-8e2e-4cf6-9088-9a33630c2266">adequate testing can be performed. In many cases, the remediation started too late.</p>
+        <ul id="_99e1f779-3f23-4f9b-9c3a-8f6f36746de5">
+<li>
+<p id="_a45fc013-dffd-4b05-a456-6f27e0df6057">The interaction between patches, as well as the sequencing of patches, needs to be understood and clearly communicated.</p>
+</li>
+<li>
+<p id="_fe792125-ce31-4395-9a7f-51dcd9981ec8">System Administrators need to be more familiar with the systems they support and interactions between those systems. This includes locally developed applications and systems, and applications elsewhere within the organization.</p>
+</li>
+<li>
+<p id="_c1497c4d-5fab-4cbf-b63c-4fd78d45e7a9">Mitigation and remediation need to take place as early as possible using robust tools.</p>
+</li>
+<li>
+<p id="_c5140a40-52ab-4e9b-8f5a-20204840dd16">Relevant and complete information needs to be made available in a timely fashion by vendors to their customers, and from IT staff to the people and organizations they support. The information needs to be clear and appropriate for each audience.</p>
+</li>
+<li>
+<p id="_6b1a8759-e452-428d-aaef-e637604dafe0">End users need to have a better understanding of the tools they use to perform their jobs. Knowing what to look for and expect will help when troubleshooting problems, as well as make them more productive users of these systems. Many users do not use an external source of authoritative time information and some do not even configure their desktop computers to the correct tie zone and/or DST settings. Concomitantly, vendors need to make these things easier to do and to validate.</p>
+</li>
+<li>
+<p id="_f5b7b8c5-ab70-4efd-9775-2ddec45c2794">Authoritative clearinghouses for situations such as this DST change can be very valuable but do not always exist, nor do they necessarily materialize in a timely fashion.</p>
+</li>
+</ul>
+        <p id="_fceaa794-0a76-4ed1-9a4e-cfed4b48e9aa">CalConnect&#x2019;s role as a promoter of calendaring and scheduling standards put the consortium in a unique position. By publishing web pages with both informational articles and links to resources on publicly-accessible websites, the consortium was able to act as a clearinghouse of DST- related resources. The consortium also put out informational press releases to both industry and general news providers.</p>
+        <p id="_d4c5c2fa-a4e6-4e5a-8312-0fa5735bdc5c">However, CalConnect could have made a greater contribution. The consortium was very active and visible in the last 6 months of 2005, but did not keep the DST-related issues and concerns in front of the media, the IT profession, or the public again until February 2007. In retrospect, raising IT awareness throughout calendar year 2006 would have been very useful.</p>
+      </div>
+      <div id="_recommendations_for_the_future">
+        <h1 id="toc5">4.&#xA0; Recommendations for the Future</h1>
+        <p id="_7b491213-e536-4fdb-8e43-a8e04d748d96">The next DST transition in November 2007 is not expected to cause as many problems as was seen in March 2007, because the remediation already done for March should cover most future transitions with these new rules. However, it is still possible that some calendaring events and systems were not correctly or completely updated, so administrators and users should again check all events due to occur between October 28th and November 4th 2007. These checks should be done sooner rather than later to avoid the last minute rush to do fixes that we experienced in March 2007. It is also important to confirm that DST updates have been applied to systems that were restored to potentially pre-update states or were placed in service after March 2007. Such systems represent increased risk in environments that do not have strong patching practices.</p>
+        <p id="_6c0902fe-1366-4c74-b698-ac82bb394a9b">As was noted before, there is still some chance that the DST rules will be &#x201C;`rolled-back&#x201D; to their previous definitions if the U.S. Congress determines there was positive effect on energy usage or conservation. Even if that does not happen, there is no guarantee that it will be another 20 years before the next U.S. changes are mandated, for whatever reasons. As many other countries, update their DST rules more frequently than the U.S., it&#x2019;s clear that there needs to be a better way to manage changes to DST rules.</p>
+        <p id="_9308c3f0-eafe-45f1-82b1-2c197ecb916a">To that end, CalConnect&#x2019;s TC-TIMEZONE is developing a recommendations document for a standard time zone registry that will provide a central, definitive repository of timezone and DST rules. This ad-hoc committee concurs that setting up such a timezone registry is important, and should be acted upon as soon as possible.</p>
+        <p id="_f6185da8-be49-40b0-a9a0-bd8c2e6f18d5">The benefits of such a registry are clear&#x2009;&#x2014;&#x2009;vendors adopting this registry as a source for the timezone and DST rules can build updating procedures into their products so that future changes to rules are automatically handled by update processes similar to those already in place. This avoids the need for each vendor to distribute their own set of patches, and significantly lessens the support impact that system administrators have in applying those patches.</p>
+        <p id="_a1827c8b-550a-42df-9b14-3d8b9797f206">There are several hurdles that need to be overcome before such a registry could be viable, and TC-TIMEZONE&#x2019;s work will attempt to address all of those. In addition, TC-TIMEZONE will define protocols for a timezone service that can be used as a means to carry out the automatic update process being proposed. This service would provide access to the timezone registry data as well as providing other useful features, such as a mechanism for quickly mapping between earlier timezone identifiers and the new standard form used in the registry. The service could provide a list of periods covering the date ranges where a timezone or DST rule change will impact existing data, providing a fast way to evaluate the changes needed to when an update needs to be applied.</p>
+        <p id="_807eb592-ca65-4944-b8f9-7eee20143ec6">For significant issues such as timezones, CalConnect should take a more proactive approach including using its public mailing list for system administrators, <a href="http://lists.calconnect.org/mailman/listinfo/caladmin-l">http://lists.calconnect.org/mailman/listinfo/caladmin-l</a>, to provide regular updates on timezone changes and timezone processing. CalConnect might also consider providing a RSS feed of news related to calendaring and scheduling.</p>
+      </div>
+      <div id="_conclusions">
+        <h1 id="toc6">5.&#xA0; Conclusions</h1>
+        <p id="_ccd1705d-1e2a-41f1-b266-15bb1af6bfbd">Timezone processing is intellectually simple but becomes challenging in the context of today&#x2019;s complex, multi-layered, multi-vendor software environments. It becomes more difficult yet when we factor in timezone changes and the necessity to maintain interoperability across system, organizational, and political boundaries.</p>
+        <p id="_5166c8c7-8183-4f66-8fa1-415ab21c524a">Whereas we have made significant progress in identifying and understanding timezone processing in this context, we have not made enough progress to implementing timezone processing or accommodating changes to timezones.</p>
+        <p id="_6e4a756d-d2a0-4f04-a83e-3ffdfd83264a">CalConnect believes that establishing an authoritative timezone registry service is the most important step we can take to provide modern, maintainable timezone processing.</p>
+      </div>
+    </main>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    asciimath2jax: { delimiters: [['(#(', ')#)']] }
+ });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=MML_HTMLorMML-full" async="async"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>  <script>
+    $("#toc").on('click', 'li', function(e) {
+    $(this).parent().find('li.toc-active').removeClass('toc-active');
+    $(this).addClass('toc-active');
+});
+  </script>
+  
+  <script>
+  //TOC toggle animation
+$('#toggle').on('click', function(){
+    if( $('nav').is(':visible') ) {
+        $('nav').animate({ 'left': '-353px' }, 'slow', function(){
+            $('nav').hide();
+        });
+        $('.container').animate({ 'padding-left': '31px' }, 'slow');
+    }
+    else {
+        $('nav').show();
+        $('nav').animate({ 'left': '0px' }, 'slow');
+        $('.container').animate({ 'padding-left': '360px' }, 'slow');
+    }
+});
+</script>
+
+<script>
+    // Scroll to top button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+  <script>
+// @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+//
+// AnchorJS - v4.2.2 - 2020-04-20
+// https://www.bryanbraun.com/anchorjs/
+// Copyright (c) 2020 Bryan Braun; Licensed MIT
+//
+// @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function f(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.base=A.hasOwnProperty("base")?A.base:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64,A.titleText=A.hasOwnProperty("titleText")?A.titleText:""}function p(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}this.options=A||{},this.elements=[],f(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var e,t,i,n,o,s,a,r,c,h,l,u,d=[];if(f(this.options),"touch"===(l=this.options.visible)&&(l=this.isTouchDevice()?"always":"hover"),0===(e=p(A=A||"h2, h3, h4, h5, h6")).length)return this;for(!function(){if(null!==document.head.querySelector("style.anchorjs"))return;var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"],style'))?document.head.appendChild(e):document.head.insertBefore(e,A);e.sheet.insertRule(".anchorjs-link{opacity:0;text-decoration:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}",e.sheet.cssRules.length),e.sheet.insertRule(":hover>.anchorjs-link,.anchorjs-link:focus{opacity:1}",e.sheet.cssRules.length),e.sheet.insertRule("[data-anchorjs-icon]::after{content:attr(data-anchorjs-icon)}",e.sheet.cssRules.length),e.sheet.insertRule('@font-face{font-family:anchorjs-icons;src:url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype")}',e.sheet.cssRules.length)}(),t=document.querySelectorAll("[id]"),i=[].map.call(t,function(A){return A.id}),o=0;o<e.length;o++)if(this.hasAnchorJSLink(e[o]))d.push(o);else{if(e[o].hasAttribute("id"))n=e[o].getAttribute("id");else if(e[o].hasAttribute("data-anchor-id"))n=e[o].getAttribute("data-anchor-id");else{for(c=r=this.urlify(e[o].textContent),a=0;void 0!==s&&(c=r+"-"+a),a+=1,-1!==(s=i.indexOf(c)););s=void 0,i.push(c),e[o].setAttribute("id",c),n=c}(h=document.createElement("a")).className="anchorjs-link "+this.options.class,h.setAttribute("aria-label",this.options.ariaLabel),h.setAttribute("data-anchorjs-icon",this.options.icon),this.options.titleText&&(h.title=this.options.titleText),u=document.querySelector("base")?window.location.pathname+window.location.search:"",u=this.options.base||u,h.href=u+"#"+n,"always"===l&&(h.style.opacity="1"),""===this.options.icon&&(h.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(h.style.lineHeight="inherit")),"left"===this.options.placement?(h.style.position="absolute",h.style.marginLeft="-1em",h.style.paddingRight="0.5em",e[o].insertBefore(h,e[o].firstChild)):(h.style.paddingLeft="0.375em",e[o].appendChild(h))}for(o=0;o<d.length;o++)e.splice(d[o]-o,1);return this.elements=this.elements.concat(e),this},this.remove=function(A){for(var e,t,i=p(A),n=0;n<i.length;n++)(t=i[n].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(i[n]))&&this.elements.splice(e,1),i[n].removeChild(t));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){return this.options.truncate||f(this.options),A.trim().replace(/\'/gi,"").replace(/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\\n\t\b\v]/g,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&-1<(" "+A.firstChild.className+" ").indexOf(" anchorjs-link "),t=A.lastChild&&-1<(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ");return e||t||!1}}});
+// @license-end
+  </script>
+  <script>
+/*
+  $(document).ready(function() {
+          $('[id^=toc]').each(function ()
+          {
+             var currentToc = $(this);
+       var url = window.location.href;
+             currentToc.wrap("<a href='" + url + "#" + currentToc.attr("id") + "' </a>");
+          });
+});
+*/
+  anchors.options = {
+  placement: 'left'
+};
+anchors.add('h1, h2, h3, h4');
+</script>
+
+</body>
+</html>
