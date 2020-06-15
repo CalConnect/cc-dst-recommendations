@@ -8,7 +8,7 @@ Articles relating to this proposal
 * _EU members complain about a lack of detail and a tight timeline_, https://www.politico.eu/article/countries-resist-jean-claude-juncker-daylight-saving-clock-change-plan/
 
 * _IANA statement_,
-link:https://mm.icann.org/pipermail/tz/2018-July/026705.html[​https://mm.icann.org/pipermail/tz/2018-July/026705.html]
+https://mm.icann.org/pipermail/tz/2018-July/026705.html[​https://mm.icann.org/pipermail/tz/2018-July/026705.html]
 
 * _Mit dem Ende der Zeitumstellung droht ein neues Jahr-2000-Problem_,
 https://newsroom.gmx.net/2018/10/26/ende-der-zeitumstellung-moegliche-folgen-es-droht-ein-neues-jahr-2000-problem/
