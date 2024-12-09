@@ -1,8 +1,10 @@
 ---
 metanorma:
-  deploy:
-    email: "travis-ci@metanorma.org"
-relaton:
+  source:
+    files:
+      - sources/cc-0707.adoc
+      - sources/cc-18018.adoc
+
   collection:
-    name: CalConnect DST recommendations
-    organization: CalConnect/ISO
+    name: "CalConnect DST recommendations"
+    organization: CalConnect
