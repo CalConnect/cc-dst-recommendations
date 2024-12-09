@@ -6,21 +6,38 @@
 :doctype: advisory
 :edition: 1
 :status: published
-:revdate: 2007-10-04T00:00:00Z
+:revdate: 2007-10-04
 :language: en
 :technical-committee: Ad Hoc DST
 :published-date: 2007-10-04
-:docfile: cc-0707.adoc
-:mn-document-class: csd
+:mn-document-class: cc
 :mn-output-extensions: xml,html,pdf,rxl
 :local-cache-only:
 :data-uri-image:
-
-////
-Editors
-Mike Mize, California State University Fresno
-Gary Schwartz, Rensselaer Polytechnic Institute
-////
+:fullname: Mike Mize
+:lastname: Mize
+:forename_initials: M.
+:affiliation: California State University, Fresno
+:street: 5241 N Maple Ave
+:city: Fresno
+:code: 93740
+:region: CA
+:country: USA
+:contributor-uri: http://www.fresnostate.edu
+:email: mmize@mail.fresnostate.edu
+:role: editor
+:fullname_2: Gary Schwartz
+:lastname_2: Schwartz
+:forename_initials_2: G.
+:affiliation_2: Rensselaer Polytechnic Institute
+:street_2: 110 8th Street
+:city_2: Troy
+:code_2: 12180
+:region_2: NY
+:country_2: USA
+:contributor-uri_2: http://www.rpi.edu
+:email_2: schwag@rpi.edu
+:role_2: editor
 
 .Foreword
 The Calendaring and Scheduling Consortium ("`CalConnect`") is a global

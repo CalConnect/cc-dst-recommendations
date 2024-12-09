@@ -2,22 +2,36 @@
 
 This work item belongs to TC DATETIME.
 
-image:https://travis-ci.com/CalConnect/csd-eu-dst-recommendation.svg?branch=master["Build Status", link="https://travis-ci.com/calconnect/csd-eu-dst-recommendation"]
+image:https://github.com/CalConnect/cc-eu-dst-recommendation/actions/workflows/generate.yml/badge.svg["Build Status", link="https://github.com/CalConnect/cc-eu-dst-recommendation/actions/workflows/generate.yml"]
 
 This document is available in its rendered forms here:
 
-* https://calconnect.github.io/csd-eu-dst-recommendation/[CC: CalConnect DST recommendations (HTML)]
+* https://calconnect.github.io/cc-eu-dst-recommendation/[CC: CalConnect DST recommendations (HTML)]
+
+
+== Structure
+
+`sources/`::
+source of documents and models
+
+`sources/cc-0707.adoc`::
+CalConnect CC 0707 standard.
+
+`sources/cc-18018.adoc`::
+CalConnect CC 18018 standard.
+
+`_site/`::
+(automatically generated using `metanorma site generate`) published document.
+
 
 == Fetching the document
 
-[source,sh]
-----
-git clone https://github.com/CalConnect/csd-eu-dst-recommendation/
-----
+Click on "Code > Local" to clone this repository.
 
-== Installing Build Tools
 
-See https://www.metanorma.com/author/topics/install/
+== Installing build tools
+
+See https://www.metanorma.org/install/
 
 
 == Running via Docker or locally
@@ -25,38 +39,33 @@ See https://www.metanorma.com/author/topics/install/
 If you have installed the build tools locally, and wish to run the
 locally-installed compilation tools, there is nothing further to set.
 
-If you don't want to deal with local dependencies, use the docker
-version by:
+If you don't want to deal with local dependencies, use the docker:
 
 [source,sh]
 ----
-export METANORMA_DOCKER=1
+docker run -v "$(pwd)":/metanorma -w /metanorma -it metanorma/mn metanorma site generate --agree-to-terms
 ----
 
-The `Makefile` will automatically choose the proper command to
-execute.
 
-
-== Building The Document
+== Building the document
 
 [source,sh]
 ----
-make clean all
+metanorma site generate --agree-to-terms
 ----
 
-The following outputs will be built:
-
-* CSD XML (https://github.com/calconnect/metanorma-model-csd) (`[filename].xml`)
-* HTML (`[filename].html`)
-* PDF (`[filename].pdf`)
-* Word DOC (`[filename].doc`)
+The generated documents are accessible under `_site/`.
 
 
 == Iterating the document
 
 [source,sh]
 ----
-make html
-open cc-*.html
+metanorma site generate --agree-to-terms
+open _site/index.html
 ----
 
+
+== License
+
+Copyright its respective authors and CalConnect.

@@ -10,30 +10,29 @@
 :language: en
 :technical-committee: Ad Hoc EU Time
 :published-date: 2018-10-30
-:docfile: cc-18018.adoc
-:mn-document-class: csd
+:mn-document-class: cc
 :mn-output-extensions: xml,html,pdf,rxl
 :local-cache-only:
 :data-uri-image:
 
 
 ////
-:sectnums!:
-
 include::sections/00-foreword.adoc[]
-include::sections/00-intro.adoc[]
 
-:sectnums:
+include::sections/00-intro.adoc[]
 ////
 
 include::sections/01-summary.adoc[]
+
 include::sections/02-eu-proposal.adoc[]
+
 include::sections/03-going-to-do.adoc[]
+
 include::sections/04-contact.adoc[]
+
 include::sections/05-about.adoc[]
+
 include::sections/06-references.adoc[]
 
 //include::sections/99-bibliography.adoc[]
-
-
 
