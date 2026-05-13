@@ -1,4 +1,4 @@
-# metanorma.release.yml — cc-dst-recommendations
+# metanorma.release.yml — cc-eu-dst-recommendation
 
 documents:
   - pattern: "cc-*"

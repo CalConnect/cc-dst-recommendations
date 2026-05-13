@@ -1,5 +1,5 @@
-# .metanorma/channels.yml — cc-dst-recommendations
+# .metanorma/channels.yml — cc-eu-dst-recommendation
 
 channels:
   - name: public/standards
-    description: "CalConnect documents from cc-dst-recommendations"
+    description: "CalConnect documents from cc-eu-dst-recommendation"
