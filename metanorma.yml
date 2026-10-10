@@ -2,7 +2,6 @@
 metanorma:
   source:
     files:
-      - sources/cc-0707.adoc
       - sources/cc-18018.adoc
 
   collection:
