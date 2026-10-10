@@ -84,6 +84,12 @@ The editors of the document are:
 * Gary Schwartz, Rensselaer Polytechnic Institute
 
 
+[abstract]
+== Abstract
+
+CalConnect EDST (Extended Daylight Savings Time) Reflections and Recommendations.
+
+
 == Introduction
 
 The U.S. Energy Policy Act of 2005 (EPACT 2005), signed by President Bush on August 8, 2005, among its many, many provisions, amends the Uniform Time Act of 1966 by changing the start and end dates of daylight saving time (DST) in the US. DST begins three weeks earlier and ends one week later, effective in 2007. DST now begins the second week of March and ends the first week in November (March 11 and November 4 in 2007). Other areas, including Canada and Bermuda, also choose to follow the new rules.
