@@ -19,14 +19,15 @@
 ////
 include::sections/00-foreword.adoc[]
 
+
+include::sections/00-intro.adoc[]
+////
+
 [abstract]
 == Abstract
 
 This advisory calls on the European Union to reconsider the timeline for its proposed seasonal time changes, and announces a CalConnect workshop and mailing list for discussion of the technical impact of the planned changes.
 
-
-include::sections/00-intro.adoc[]
-////
 
 include::sections/01-summary.adoc[]
 
